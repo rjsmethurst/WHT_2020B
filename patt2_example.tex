@@ -1,0 +1,325 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  PATT2 FORM VERSION 02/2003 - COMPLETED EXAMPLE       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  ENTER THE INFORMATION BETWEEN THE CURLY BRACKETS     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  DO NOT EDIT THE PATT2.STY FILE IN ANY WAY            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% the default font size must not be altered from 11pt.  %
+% proposals written in a smaller font will be rejected  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{patt2}
+
+% Allow epsfig, psfig or graphicx packages
+
+\usepackage{epsfig}
+\usepackage{psfig}
+\usepackage{graphicx}
+
+% Uncomment below if using pdflatex
+%\usepackage{epstopdf}
+%\pdfpageheight=11.69in
+%\pdfpagewidth=8.26in
+
+\typeout{This is the PATT2 (Optical/IR) example LaTeX form}
+
+% add any personal macros here
+
+% end macros
+
+\begin{document}
+
+\telescope{WHT}    % AAT, UKST, WHT, INT or UKIRT 
+\semester {2003B}  % eg 2003B 
+
+\category {5}   % Scientific Category (enter a number):
+                % 1 Solar system and extrasolar planets
+                % 2 ISM, CSM, PNe, including star formation
+                % 3 Stars and stellar populations (galactic and circum-galactic)
+                % 4 Low-z universe
+                % 5 High-z universe
+ 
+\relatedapps{x}{}{}{}{}{}{}{}{} % Coordinated PATT applications {x} 
+% in order AAT,UKST,WHT,INT,UKIRT,JCMT,Gemini,LT,MERLIN
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE 1 OF PATT2 FORM %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PI information
+
+\pisurname     {Wogan}             % Surname
+\pititle       {Mr}                % Mr/Mrs/Ms/Miss/Dr/Prof.
+\pifirstname   {Chris}             % First name
+\pistatus      {Broadcaster}       % Post held
+\piaddressone  {BBC}               % Name of Institute
+\piaddresstwo  {Broadcasting House}% Postal Address
+\piaddressthree{London W1A 4WW}    % Postal Address
+\piphone       {0123-456789}       % Phone number
+\pifax         {0987-654321}       % Fax number
+\piemail       {tw@bbc.org}        % email address
+\piobserver    {Yes}               % Is the PI going to observe? {Yes/No}
+
+% collaborator 1
+
+\collabonename    {B. Walters}     % Name of first collaborator
+\collaboneinst    {CBS}            % Name of Institute
+\collaboneobserver{No}             % Will collaborator observe? {Yes/No}
+
+% collaborator 2
+
+\collabtwoname    {}
+\collabtwoinst    {}
+\collabtwoobserver{}
+
+% collaborator 3
+
+\collabthreename    {}
+\collabthreeinst    {}
+\collabthreeobserver{}
+
+% collaborator 4
+
+\collabfourname    {}
+\collabfourinst    {}
+\collabfourobserver{}
+
+% note additional collaborators can be added by inserting multiple
+%names into these entries.
+
+
+
+% proposal information 
+
+\title      {To show that the Hubble Constant is in fact 42}% Brief title  (12 words only)
+
+\abstract   {
+
+% summary of proposed observations
+% add your abstract here.  the font size must not be smaller 
+% than the default in the style-file
+
+It is suggested that the answer to the Universe and Everything is, to
+within a jot or two, 42. By taking images with our 2-D colour gun we 
+will verify this result.
+
+
+}                
+
+
+% Instrument requirements
+
+\focalstation       {GHRIL}        % eg prime,f/3.3,f/8,f/15,f/36,cs/36
+\instrument         {Wogan gun}    % eg RGO spec, UCLES, UHRF, Taurus, TTF, IRIS
+                                   % prime focus imager, LDSS etc
+\detector           {SITe}         % which chip do you want to use?
+\gratingsandfilters {123R}         % eg UBVRI,H$\alpha$,1200R,etc
+
+\timerequested  {6}{}{}{N}         % No. of {Dark},{Grey},{Bright}, 
+                                   % {Weeks/Nights/Hours}
+\minuseful      {6}{}{}            % Minimum number of useful {D},{G},{B} 
+\lttotaltime    {}{}{}{}           % For long term proposals indicate the
+                                   % TOTAL requested {D},{G},{B},{W/N/H}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE 2 OF PATT2 FORM %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\prefdates            {October}    % Preferred dates, eg Jan,Feb
+\impossdates          {January}    % Impossible dates, eg Mar,Apr
+\datesjustification   {RA's}       % Why impossible? eg wrong RAs, etc
+\simultaneous         {With the AAT} % Simultaneous with other tels/satellites?
+\othertimeconstraints {Must be dark} % eg Moon phase/position,specific dates
+\serviceobservingyes  {}           % Observations to be done as Service? {x}
+\serviceobservingno   {x}          % or not {x}
+\serviceobservingmaybe{}           % or maybe {x}
+\supporteverynight    {}           % Support astronomer every night? {x}
+\supportnone          {}           % No support astronomer? {x}
+\supportfirstnight    {x}          % Support astronomer first night only? {x}
+                                   % (This is the only option for ING)
+
+% target info                      % Target RA,Dec,Mags,Colours,Exp Time
+
+\targetinfo{
+
+%enter target information here.  this should include name, ra, dec
+%and some indication of magnitude, line flux etc.  it is OK to use
+%a small font here.
+
+\begin{tabular}[t]{p{1.2in}p{1.0in}p{1.0in}p{1.0in}p{1.0in}p{1.0in}}
+  Anon    & 12 23 & +44 30 & 16.5 & 0.4 & 2 hrs \\
+  Anon2   & 15 23 & +24 30 & 12.3 & 0.2 & 2 mins \\
+  Anon3   & 17 23 & +44 30 & 16.5 & 0.4 & 2 hrs \\
+  Anon4   & 19 23 & +24 30 & 12.3 & 0.2 & 2 mins \\
+  Anon5   & 21 23 & +44 30 & 16.5 & 0.4 & 2 hrs \\
+  Anon6   & 23 23 & +24 30 & 12.3 & 0.2 & 2 mins \\
+  Anon7   & 01 23 & +44 30 & 16.5 & 0.4 & 2 hrs \\
+  Anon8   & 03 23 & +24 30 & 12.3 & 0.2 & 2 mins \\
+  Anon9   & 05 23 & +44 30 & 16.5 & 0.4 & 2 hrs \\
+\end{tabular}
+}
+
+% LIST ALL SIMILAR/SUPPORTING APPLICATIONS TO ANY PATT OR OTHER TIME
+% ASSIGNMENT COMMITTEE  
+% You must include a brief description of any
+% other applications whose targets or science goals are similar to 
+% those requested here
+
+\otherapplications{
+\begin{tabular}[t]{p{1.6in}p{5.0in}}
+%Telescope/Committee & Short title of programme  \\
+AAT & The Hubble constant in the Southern Hemisphere \\
+VLT & The Hubble constant from interferometry \\
+\end{tabular}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE 3 OF PATT2 FORM - SCIENTIFIC JUSTIFICATION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sciencecase{
+
+There is very little that we need to do to justify this application
+as it has in fact been shown ({\it See Hitch Hikers Guide to the Galaxy})
+that the answer to Life, The Universe and Everything is without doubt, 42. It
+might be worth while, however, to add a little observational confirmation to
+this if only to while away the long winter nights....
+
+% add your science case here.  
+
+% proposals written in a font smaller than 11pt will be rejected
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE 3a OF PATT2 FORM - SCIENTIFIC JUSTIFICATION     %
+% FOR PROPOSALS TO AAT, WHT or UKIRT FOR 8 OR MORE     % 
+% NIGHTS, AND FOR  ALL (I.E. INCLUDING INT AND UKST)   %
+% LONG-TERM AND COORDINATED PROPOSALS (INCLUDING THOSE %
+% COORDINATED WITH NON-PATT TELESCOPES)                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\extendedsciencecase{
+
+% continue your science case here ONLY if applying for 8 or 
+% more nights to the AAT, WHT OR UKIRT, or if your proposal 
+% is a long-term (multi-semester) proposal to the AAT, UKST, 
+% WHT, INT or UKIRT, or if your proposal (to AAT, UKST, WHT, 
+% INT or UKIRT) is coordinated with other telescopes (including 
+% non-PATT telescopes).  
+
+% Remember to comment IN the \makepatttwopagethreea command later 
+% in this file if you have written an extended science case  
+
+% proposals written in a font smaller than 11pt will be rejected
+
+...especially 8 or more nights on the AAT, WHT and UKIRT.
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE 4 OF PATT2 FORM - TECHNICAL INFORMATION (I) - FEASIBILITY, S/N, ETC %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\technicalpage{
+
+no problems!
+
+% add any technical details you wish to transmit to the panel and
+% technical assessor here. you may also include references here
+% as well as on the next page
+
+% proposals written in a font smaller than 11pt will be rejected
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE 4a OF PATT2 FORM - TECHNICAL INFORMATION (II) - REFERENCES, FIGS, ETC %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\figsandrefspage{
+
+Complete Works of Shakespeare, W.Shakespeare.\newline
+\hfill Hitchiker's Guide to the Galaxy, D.Adams.\newline
+\hfill Anon,B. MNRAS  1099, 567, 1999.\newline
+
+% Here is an example of how to embed a PostScript figure in LaTeX using psfig
+\psfig{file=patt2_examplefig.ps,angle=270,width=15cm}
+
+% Here is an example of how to embed a PostScript figure in LaTeX using graphicx
+%\includegraphics[width=15cm,angle=270]{patt2_examplefig.ps}
+
+% add any figures, references etc here.  remember to embed your figures.
+
+% proposals written in a font smaller than 11pt will be rejected
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE 5 OF PATT2 FORM %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\backupprogram{Observe brighter members of the sample...} % Summary of backup programme
+
+\previous{            % Previous applications (last 4 Sems)
+\begin{tabular}[t]{p{1.5in}p{0.7in}p{0.8in}p{3.2in}}
+                      %Patt No. & Award & clear nights & comments \\
+W/2003A/99 & 4Gn & 4 & sub-arcsecond seeing throughout  \\
+\end{tabular}
+}
+
+\publications     {none} % List pubs with data from patt time (last 4 Sems)
+
+\experience       {none} % Experience of observers on other telescopes
+\graduatestudent  {Fran Godfrey}{Hubble}       % Research student {Name of student}{Project}
+\grant            {}{}{} % {Name of PI}{Grant title}{Grant No.}
+\nonstandardtravel{Wogan travels first class}         % Justify T&S for more than one UK observer
+\otherexpenditure {none} % eg for freight etc.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE 6 OF PATT2 FORM - THIS SECTION IS REMOVED BY THE AAT DURING PROCESSING
+% IF INCLUDED.  ING APPLICANTS SHOULD NOT ENTER ANYTHING HERE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\shorttitle {}           % Ignore if you are an ING applicant.
+
+
+
+\makepatttwopageone
+\makepatttwopagetwo
+\makepatttwopagethree
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMMENT THE FOLLOWING LINE IN *ONLY* IF                           % 
+%                                                                   %
+% YOU ARE APPLYING FOR 8 OR MORE NIGHTS ON THE AAT, WHT OR UKIRT, OR% 
+% YOUR PROPOSAL IS LONG-TERM FOR THE AAT, WHT, UKIRT OR INT, OR     % 
+% YOUR PROPOSAL IS COORDINATED WITH OTHER TELESCOPES                % 
+%                                                                   % 
+% *AND* YOU HAVE USED THE CONTINUATION PAGE FOR YOUR SCIENTIFIC CASE% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\makepatttwopagethreea
+
+\makepatttwopagefour
+\makepatttwopagefoura
+\makepatttwopagefive
+
+% FOR ING APPLICATIONS LEAVE THE FOLLOWING LINE COMMENTED OUT
+
+%\makepatttwopagesix         
+
+% FOR AAT APPLICATIONS YOU MAY LEAVE IT IN IF YOU WISH.  IT WILL NOT
+% BE TRANSMITTED TO THE TAG HOWEVER.
+
+\end{document}
