@@ -105,9 +105,9 @@
                               % prime focus imager, LDSS etc
 \detector           {EEV10}        % which chip do you want to use?
 \gratingsandfilters {R300V}        % eg UBVRI,H$\alpha$,1200R,etc
-\timerequested  {?}{}{}{Nights}      % No. of {Dark},{Grey},{Bright}, 
+\timerequested  {4}{}{}{Nights}      % No. of {Dark},{Grey},{Bright}, 
                               % {Weeks/Nights/Hours}
-\minuseful      {?}{}{}        % Minimum number of useful {D},{G},{B} 
+\minuseful      {4}{}{}        % Minimum number of useful {D},{G},{B} 
 \lttotaltime    {}{}{}{}      % For long term proposals indicate the
                               % TOTAL requested {D},{G},{B},{W/N/H}
 
@@ -132,14 +132,14 @@
 
 \targetinfo{
 
-J015911.34+000635.1 \quad 01:59:11.34 \qquad\quad +00:06:35.1 \qquad\qquad\quad 20.71 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 26.7\\ 
-J011242.10+010839.2 \quad 01:12:42.10 \qquad\quad +01:08:39.2 \qquad\qquad\quad 20.88 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 33.3\\ 
-J102153.20+001743.3 \quad 10:21:53.20 \qquad\quad +00:17:43.3 \qquad\qquad\quad 20.26 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 15.0\\ 
-J142049.60+052627.5 \quad 14:20:49.60 \qquad\quad +05:26:27.5 \qquad\qquad\quad 20.44 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 18.3\\ 
-J092000.86+192200.2 \quad 09:20:00.86 \qquad\quad +19:22:00.2 \qquad\qquad\quad 21.71 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 116.7\\ 
-J135256.55+024851.4 \quad 13:52:56.55 \qquad\quad +02:48:51.4 \qquad\qquad\quad 19.59 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 6.7\\ 
-J022809.70+004756.6 \quad 02:28:09.70 \qquad\quad +00:47:56.6 \qquad\qquad\quad 19.40 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 5.8\\ 
-J133524.55+012438.1 \quad 13:35:24.55 \qquad\quad +01:24:38.1 \qquad\qquad\quad 19.84 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 10.0\\ 
+J015911.34+000635.1 \quad 01:59:11.34 \qquad\quad +00:06:35.1 \qquad\qquad\quad 20.71 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 35.0\\ 
+J011242.10+010839.2 \quad 01:12:42.10 \qquad\quad +01:08:39.2 \qquad\qquad\quad 20.88 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 43.3\\ 
+J102153.20+001743.3 \quad 10:21:53.20 \qquad\quad +00:17:43.3 \qquad\qquad\quad 20.26 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 20.0\\ 
+J142049.60+052627.5 \quad 14:20:49.60 \qquad\quad +05:26:27.5 \qquad\qquad\quad 20.44 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 23.3\\ 
+J092000.86+192200.2 \quad 09:20:00.86 \qquad\quad +19:22:00.2 \qquad\qquad\quad 21.71 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 150.0\\ 
+J135256.55+024851.4 \quad 13:52:56.55 \qquad\quad +02:48:51.4 \qquad\qquad\quad 19.59 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 8.3\\ 
+J022809.70+004756.6 \quad 02:28:09.70 \qquad\quad +00:47:56.6 \qquad\qquad\quad 19.40 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 6.7\\ 
+J133524.55+012438.1 \quad 13:35:24.55 \qquad\quad +01:24:38.1 \qquad\qquad\quad 19.84 \qquad\qquad\qquad\quad - \qquad\qquad\qquad\qquad 11.7\\ 
 \rm{and} \rm{22} \rm{other} \rm{similar} \rm{targets}
 
 %enter target information here.  this should include name, ra, dec
@@ -220,9 +220,9 @@ The parent sample from which our galaxies are drawn is made up of all SDSS galax
 \\
 The IDS spectrograph on the INT is ideal for observing this sample due to the flexibility of the gratings available. This allows us to optimise the wavelength range targeted against the spectral resolution in order to maximise the science output. We therefore propose to target the $H\alpha$ emission line in each of our sources with the R300V grating on the EEV10 detector, which still has a large enough wavelength range to also capture the $D_n4000\rm{\AA}$ break-$H\beta$-\textsc{[OIII]} region ($5067 < \textsc{[OIII]} \lambda_{emit} $[\rm{\AA}]$ < 5245$). Targeting these regions of the spectrum specifically will allow us to observe a maximum number of emission lines with high resolution to derive precise gas kinematics whilst also allowing for an accurate determination of the resolved star formation rate in and outside the bar ({\citecol Spindler et al. 2018}$^{[16]}$). 
 
-In order to derive an accurate measure of the gas inflow rates in our targets, we need to be able to determine the gas kinematics. We will utilise the tried and tested \textsc{ppxf} spectral fitting code ({\citecol Cappellari \& Emsellem 2004}$^{[21]}$) to derive the velocity of the gas along the bar for each of our targets. To do this we require a high signal-to-noise ratio (SNR) to ensure that each of the emission lines in the sample are well resolved. To achieve a $SNR=10$ for each of our targets we calculated an exposure time given the quantum efficiency of the detectors at the redshifted wavelength of $H\alpha$ ($6641 < \lambda_{emit} $[\rm{\AA}]$ < 6874$) and assuming negligible sky background on dark sky nights with respect to the read noise of the EEV12 and RED+ detectors. Given these requirements the total on source time is ?? hours, assuming a seeing of 1" and optimal airmass conditions. The minimum (maximum) exposure time for a single source is $\sim$ ? (?) minutes. 
+In order to derive an accurate measure of the gas inflow rates in our targets, we need to be able to determine the gas kinematics. We will utilise the tried and tested \textsc{ppxf} spectral fitting code ({\citecol Cappellari \& Emsellem 2004}$^{[21]}$) to derive the velocity of the gas along the bar for each of our targets. To do this we require a high signal-to-noise ratio (SNR) to ensure that each of the emission lines in the sample are well resolved. To achieve a $SNR=10$ for each of our targets we calculated an exposure time given the quantum efficiency of the detectors at the redshifted wavelength of $H\alpha$ ($6641 < \lambda_{emit} $[\rm{\AA}]$ < 6874$) and assuming negligible sky background on dark sky nights with respect to the read noise of the EEV12 and RED+ detectors. Given these requirements the total on source time is 22.7 hours, assuming a seeing of 1" and optimal airmass conditions. The minimum (maximum) exposure time for a single source is $\sim$ 4 (183) minutes. 
 
-Using this information combined with the overhead estimates from the IDS Total Observing Time Estimator and assuming an average weather downtime of 34\% in January, we calculate that we can observe all 30 targets in ? nights of dark skies in January 2021 of the 2020B semester. 
+Using this information combined with the overhead estimates from the IDS Total Observing Time Estimator and assuming an average weather downtime of 34\% in January, we calculate that we can observe all 30 targets in 4 nights of dark skies in January 2021 of the 2020B semester. 
 
 % add any technical details you wish to transmit to the panel and
 % technical assessor here. you may also include references here
