@@ -43,7 +43,7 @@
 
 \begin{document}
 
-\telescope{WHT}    % AAT, UKST, WHT, INT or UKIRT
+\telescope{INT}    % AAT, UKST, INT, INT or UKIRT
 \semester {2020B}    % eg 2003B
 
 \category {4}    % Scientific Category (enter a number):
@@ -54,7 +54,7 @@
                 % 5 High-z universe
  
 \relatedapps {}{}{}{}{}{}{}{}{} % Coordinated PATT applications {x}
-% in order  AAT,UKST,WHT,INT,UKIRT,JCMT,Gemini,LT,MERLIN
+% in order  AAT,UKST,INT,INT,UKIRT,JCMT,Gemini,LT,MERLIN
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 % PAGE 1 OF PATT2 FORM %
@@ -97,17 +97,17 @@
 
 \title      {Are strong and weak bars different?}                % Brief title  (12 words only)
 
-\abstract   {Recent theoretical and observational work constraining the influence of mergers on galaxy evolution and growth has focused attention on the secular processes which must shape the local galaxy population, including the presence of a bar. In galaxies with strong and dominant bars, the bar can either trigger starbursts or dynamically heat gas, preventing star formation, in either case triggering a quench. Yet such strongly barred galaxies represent a minority of the disk galaxy population. We use a newly assembled sample to determine for the first time the effect of even a weak bar feature on the galaxy, using spectra from ISIS on the WHT to measure gas inflow in samples of weakly barred, strongly barred and control systems. These observations represent an important step in understanding the contribution of barred morphological quenching to the bulk of the disk galaxy population. 
+\abstract   {Recent theoretical and observational work constraining the influence of mergers on galaxy evolution and growth has focused attention on the secular processes which must shape the local galaxy population, including the presence of a bar. In galaxies with strong and dominant bars, the bar can either trigger starbursts or dynamically heat gas, preventing star formation, in either case triggering a quench. Yet such strongly barred galaxies represent a minority of the disk galaxy population. We use a newly assembled sample to determine for the first time the effect of even a weak bar feature on the galaxy, using spectra from IDS on the INT to measure gas inflow in samples of weakly barred, strongly barred and control systems. These observations represent an important step in understanding the contribution of barred morphological quenching to the bulk of the disk galaxy population. 
 }                
 % Instrument requirements
-\focalstation       {f/11}        % eg prime,f/3.3,f/8,f/15,f/36,cs/36
-\instrument         {ISIS}        % eg RGO spec, UCLES, UHRF, Taurus, TTF, IRIS
+\focalstation       {Cassegrain}        % eg prime,f/3.3,f/8,f/15,f/36,cs/36
+\instrument         {IDS}        % eg RGO spec, UCLES, UHRF, Taurus, TTF, IRIS
                               % prime focus imager, LDSS etc
-\detector           {EEV12, RED+}        % which chip do you want to use?
-\gratingsandfilters {R300B, R316R}        % eg UBVRI,H$\alpha$,1200R,etc
-\timerequested  {3}{}{}{Nights}      % No. of {Dark},{Grey},{Bright}, 
+\detector           {EEV10}        % which chip do you want to use?
+\gratingsandfilters {R300V}        % eg UBVRI,H$\alpha$,1200R,etc
+\timerequested  {?}{}{}{Nights}      % No. of {Dark},{Grey},{Bright}, 
                               % {Weeks/Nights/Hours}
-\minuseful      {3}{}{}        % Minimum number of useful {D},{G},{B} 
+\minuseful      {?}{}{}        % Minimum number of useful {D},{G},{B} 
 \lttotaltime    {}{}{}{}      % For long term proposals indicate the
                               % TOTAL requested {D},{G},{B},{W/N/H}
 
@@ -116,8 +116,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \prefdates            {January}      % Preferred dates, eg Jan,Feb
-\impossdates          {}      % Impossible dates, eg Mar,Apr
-\datesjustification   {}      % Why impossible? eg wrong RAs, etc
+\impossdates          {Sep-Dec}      % Impossible dates, eg Mar,Apr
+\datesjustification   {wrong RAs}      % Why impossible? eg wrong RAs, etc
 \simultaneous         {}      % Simultaneous with other tels/satellites?
 \othertimeconstraints {}      % eg Moon phase/position,specific dates
 \serviceobservingyes  {}      % Observations to be done as Service? {x}
@@ -173,11 +173,11 @@ It is therefore important to identify the dominant mechanisms responsible for ga
 
 However, this process has been observed only in galaxies with strong bars, where the bar is the dominant feature. Yet a large range of bar strengths are seen across the galaxy population with a broad distribution of bar lengths, widths and relative sizes, and systems with strong bars are in the minority ({\citecol Masters et al. 2011}$^{[9]}$). While strongly barred galaxies are preferentially located on the red sequence - an indication that the presence of the bar may be effective in quenching, galaxies with weaker bars are evenly distributed across the colour-magnitude diagram (see Figure 2). \textbf{This suggests that weak and strong bars may not affect a galaxy in the same way}. Most previous studies have focussed their efforts on the strong bar population ({\citecol Rosas-Guevara et al. 2020}$^{[10}$, {\citecol Newnham et al. 2020}$^{[11]}$, {\citecol Khoperskov et al. 2018}$^{[12]}$) which are easier to detect since they are brighter and constitute the main feature of the galaxy; or don't make the distinction between weak and strong bars ({\citecol Cheung et al. 2013}$^{[13]}$, {\citecol Masters et al. 2011}$^{[9]}$). The absence - until now - of a large sample of weak bars has prevented equivalent observations for weakly barred systems.
 
-{\citecol Cuomo et al. 2019}$^{[14]}$ measured the bar pattern speed in a small sample of 16 weakly barred spirals, finding no significant differences between strongly and weakly barred systems, which suggests that any differences must be due to the way the bar interacts with the gas. In this project we propose to observe a mass-matched sample (see Figure 1) of strong and weak bars along with a control sample of unbarred galaxies. These galaxies are selected from a new Galaxy Zoo sample which has, for the first time, distinguished between strong and weak bars. We will use the ISIS spectrograph on the WHT to obtain spectra along and perpendicular to the bar for each target (unbarred galaxies will have the slit aligned along the major and minor axes). The flexibility provided by the choice of gratings makes ISIS the ideal instrument to achieve our science goals. Whilst these galaxies would be interesting targets for an IFU survey, no such survey has yet included a sufficiently large number of these systems for the study we propose here. Instead, observations with ISIS will allow us to target a mass-matched sample of strong and weak bars across the colour-magnitude diagram and supplement the existing small number samples from IFU surveys such as MaNGA ({\citecol Bundy et al. 2015}$^{[15]}$). 
+{\citecol Cuomo et al. 2019}$^{[14]}$ measured the bar pattern speed in a small sample of 16 weakly barred spirals, finding no significant differences between strongly and weakly barred systems, which suggests that any differences must be due to the way the bar interacts with the gas. In this project we propose to observe a mass-matched sample (see Figure 1) of strong and weak bars along with a control sample of unbarred galaxies. These galaxies are selected from a new Galaxy Zoo sample which has, for the first time, distinguished between strong and weak bars. We will use the IDS spectrograph on the INT to obtain spectra along and perpendicular to the bar for each target (unbarred galaxies will have the slit aligned along the major and minor axes). The flexibility provided by the choice of gratings makes IDS the ideal instrument to achieve our science goals. Whilst these galaxies would be interesting targets for an IFU survey, no such survey has yet included a sufficiently large number of these systems for the study we propose here. Instead, observations with IDS will allow us to target a mass-matched sample of strong and weak bars across the colour-magnitude diagram and supplement the existing small number samples from IFU surveys such as MaNGA ({\citecol Bundy et al. 2015}$^{[15]}$). 
 
-Resolving the emission lines in each target across a large range of wavelengths with ISIS will allow us to determine the gas kinematics along and perpendicular to the bar.  We will test whether there is a significant inflow of gas along both strong and weak bars, comparing the measurements to those taken outside the bar (and compared to the control sample of unbarred galaxies). We aim to definitely answer the question; do weak bars drive gas to the centre of a galaxy at the same or different rates to strong bars, and are they therefore capable of quenching? 
+Resolving the emission lines in each target across a large range of wavelengths with IDS will allow us to determine the gas kinematics along and perpendicular to the bar.  We will test whether there is a significant inflow of gas along both strong and weak bars, comparing the measurements to those taken outside the bar (and compared to the control sample of unbarred galaxies). We aim to definitely answer the question; do weak bars drive gas to the centre of a galaxy at the same or different rates to strong bars, and are they therefore capable of quenching? 
 
-The simultaneous observation of both the blue and red side of the spectrum with ISIS will also allow us to determine the star formation rates within and outside strong and weak bars using $H\alpha$ on the red side, and $D_{n}4000\rm{\rm{\AA}}$ and \textsc{[OIII]} on the blue side ({\citecol Spindler et al. 2018}$^{[16]}$). These resolved star formation rates will be crucial to determining whether both weak and strong bar structures are responsible for any decrease in the star formation rate in these galaxies. This will allow us to determine if strong and weak bars are separate phenomenon. 
+Choosing a grating on the IDS which balances the spectral resolution with  targetting a large wavelength range will also allow us to determine the star formation rates within and outside strong and weak bars using $H\alpha$, $D_{n}4000\rm{\rm{\AA}}$ and \textsc{[OIII]} ({\citecol Spindler et al. 2018}$^{[16]}$). These resolved star formation rates will be crucial to determining whether both weak and strong bar structures are responsible for any decrease in the star formation rate in these galaxies. This will allow us to determine if strong and weak bars are separate phenomenon. 
 
 We will publish two papers as a result of these observations: (1) determining the gas kinematics to determine whether their bars allow gas to flow towards their centres and (2) constraining the star formation rates inside and outside of the bar to determine whether either strong or weak bars are directly responsible for quenching galaxies. With this work we aim to characterise the differing or similar effects of weak and strong bars to determine their overall contribution to galaxy evolution.  
 
@@ -188,7 +188,7 @@ We will publish two papers as a result of these observations: (1) determining th
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PAGE 3a OF PATT2 FORM - SCIENTIFIC JUSTIFICATION     %
-% FOR PROPOSALS TO AAT, WHT or UKIRT FOR 8 OR MORE     % 
+% FOR PROPOSALS TO AAT, INT or UKIRT FOR 8 OR MORE     % 
 % NIGHTS, AND FOR  ALL (I.E. INCLUDING INT AND UKST)   %
 % LONG-TERM AND COORDINATED PROPOSALS (INCLUDING THOSE %
 % COORDINATED WITH NON-PATT TELESCOPES)                %
@@ -197,9 +197,9 @@ We will publish two papers as a result of these observations: (1) determining th
 \extendedsciencecase{
 
 % continue your science case here ONLY if applying for 8 or 
-% more nights to the AAT, WHT OR UKIRT, or if your proposal 
+% more nights to the AAT, INT OR UKIRT, or if your proposal 
 % is a long-term (multi-semester) proposal to the AAT, UKST, 
-% WHT, INT or UKIRT, or if your proposal (to AAT, UKST, WHT, 
+% INT, INT or UKIRT, or if your proposal (to AAT, UKST, INT, 
 % INT or UKIRT) is coordinated with other telescopes (including 
 % non-PATT telescopes).  
 
@@ -218,11 +218,11 @@ We will publish two papers as a result of these observations: (1) determining th
 \technicalpage{
 The parent sample from which our galaxies are drawn is made up of all SDSS galaxies for which reliable bar classifications were made with Galaxy Zoo 2 ({\citecol Willett et al. 2013}$^{[17]}$). We volume limited our sample with a redshift range, $0.01 < z < 0.05$ and a magnitude limit $M_r < -19.73$. From our parent sample, we mass-matched 10 galaxies with strong bars, 10 with weak bars and 10 without bars, for a total of 30 galaxies. In every bar category, half are in the blue cloud and half in the red sequence (see Figure 2). All our targets also overlap with the ALFALFA footprint ({\citecol Giovanelli et al. 2005}$^{[18]}$) in order to give global gas masses. We chose targets which were not in the MaNGA target list ({\citecol Bundy et al. 2015}$^{[15]}$), CALIFA ({\citecol S\'anchez et al. 2012}$^{[19]}$) and SAMI ({\citecol Scott et al. 2005}$^{[20]}$), so as to avoid unnecessary duplicate observations. Such broad IFU studies typically aim to observe a general sample of the galaxy population and thus have too few galaxies that fit our requirements to allow for a statistically robust study of the effect of strong and weak bars that we propose. 
 \\
-The ISIS spectrograph on the WHT is ideal for observing this sample as it allows the simultaneous observation of the red and blue sides of the spectrum in combination with the flexibility of the gratings available. This allows us to optimise the wavelength range targeted against the spectral resolution in order to maximise the science output. We therefore propose to target the $H\alpha$ emission line in each of our sources with the R316R grating on the RED+ detector, with simultaneous observations of the $D_n4000\rm{\AA}$ break-$H\beta$-\textsc{[OIII]} region ($5067 < \lambda_{emit} $[\rm{\AA}]$ < 5245$) using the R300B on the EEV12 detector. Probing these regions of the spectrum specifically will allow us to observe a maximum number of emission lines to derive precise gas kinematics whilst also allowing for an accurate determination of the resolved star formation rate in and outside the bar ({\citecol Spindler et al. 2018}$^{[16]}$). 
+The IDS spectrograph on the INT is ideal for observing this sample due to the flexibility of the gratings available. This allows us to optimise the wavelength range targeted against the spectral resolution in order to maximise the science output. We therefore propose to target the $H\alpha$ emission line in each of our sources with the R300V grating on the EEV10 detector, which still has a large enough wavelength range to also capture the $D_n4000\rm{\AA}$ break-$H\beta$-\textsc{[OIII]} region ($5067 < \textsc{[OIII]} \lambda_{emit} $[\rm{\AA}]$ < 5245$). Targeting these regions of the spectrum specifically will allow us to observe a maximum number of emission lines with high resolution to derive precise gas kinematics whilst also allowing for an accurate determination of the resolved star formation rate in and outside the bar ({\citecol Spindler et al. 2018}$^{[16]}$). 
 
-In order to derive an accurate measure of the gas inflow rates in our targets, we need to be able to determine the gas kinematics. We will utilise the tried and tested \textsc{ppxf} spectral fitting code ({\citecol Cappellari \& Emsellem 2004}$^{[21]}$) to derive the velocity of the gas along the bar for each of our targets. To do this we require a high signal-to-noise ratio (SNR) to ensure that each of the emission lines in the sample are well resolved. To achieve a $SNR=10$ for each of our targets we calculated an exposure time given the quantum efficiency of the detectors at the redshifted wavelength of $H\alpha$ ($6641 < \lambda_{emit} $[\rm{\AA}]$ < 6874$) and assuming negligible sky background on dark sky nights with respect to the read noise of the EEV12 and RED+ detectors. Given these requirements the total on source time is 18.1 hours, assuming a seeing of 1" and optimal airmass conditions. The minimum (maximum) exposure time for a single source is $\sim$ 4 (142) minutes. 
+In order to derive an accurate measure of the gas inflow rates in our targets, we need to be able to determine the gas kinematics. We will utilise the tried and tested \textsc{ppxf} spectral fitting code ({\citecol Cappellari \& Emsellem 2004}$^{[21]}$) to derive the velocity of the gas along the bar for each of our targets. To do this we require a high signal-to-noise ratio (SNR) to ensure that each of the emission lines in the sample are well resolved. To achieve a $SNR=10$ for each of our targets we calculated an exposure time given the quantum efficiency of the detectors at the redshifted wavelength of $H\alpha$ ($6641 < \lambda_{emit} $[\rm{\AA}]$ < 6874$) and assuming negligible sky background on dark sky nights with respect to the read noise of the EEV12 and RED+ detectors. Given these requirements the total on source time is ?? hours, assuming a seeing of 1" and optimal airmass conditions. The minimum (maximum) exposure time for a single source is $\sim$ ? (?) minutes. 
 
-Using this information combined with the overhead estimates from the ISIS Total Observing Time Estimator and assuming an average weather downtime of 34\% in January, we calculate that we can observe all 30 targets in 3 nights of dark skies in January of the 2020 semester. 
+Using this information combined with the overhead estimates from the IDS Total Observing Time Estimator and assuming an average weather downtime of 34\% in January, we calculate that we can observe all 30 targets in ? nights of dark skies in January 2021 of the 2020B semester. 
 
 % add any technical details you wish to transmit to the panel and
 % technical assessor here. you may also include references here
@@ -375,8 +375,8 @@ Figure 2: Colour magnitude diagram showing the locations of strong (red crosses 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COMMENT THE FOLLOWING LINE IN *ONLY* IF                           % 
 %                                                                   %
-% YOU ARE APPLYING FOR 8 OR MORE NIGHTS ON THE AAT, WHT OR UKIRT, OR% 
-% YOUR PROPOSAL IS LONG-TERM FOR THE AAT, WHT, UKIRT OR INT, OR     % 
+% YOU ARE APPLYING FOR 8 OR MORE NIGHTS ON THE AAT, INT OR UKIRT, OR% 
+% YOUR PROPOSAL IS LONG-TERM FOR THE AAT, INT, UKIRT OR INT, OR     % 
 % YOUR PROPOSAL IS COORDINATED WITH OTHER TELESCOPES                % 
 %                                                                   % 
 % *AND* YOU HAVE USED THE CONTINUATION PAGE FOR YOUR SCIENTIFIC CASE% 
